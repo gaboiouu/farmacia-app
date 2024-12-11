@@ -1,0 +1,117 @@
+/* src/components/GestionarProductos/ProductoForm.css */
+.page-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    background-color: #f7f7f7;
+  }
+  
+  .form-wrapper {
+    width: 100%;
+    max-width: 800px;
+  }
+  
+  .card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-body {
+    padding: 20px;
+  }
+  
+  .form-title {
+    color: #ff8c00;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 0;
+  }
+  
+  .span-2 {
+    grid-column: span 2;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #343a40;
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+  
+  .form-group i {
+    color: #ff8c00;
+    margin-right: 5px;
+  }
+  
+  .form-control {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 0.9rem;
+  }
+  
+  .form-control:focus {
+    border-color: #ff8c00;
+    box-shadow: 0 0 0 0.2rem rgba(255, 140, 0, 0.25);
+  }
+  
+  .button-group {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  
+  .btn {
+    padding: 8px;
+    border-radius: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+  }
+  
+  .btn-primary {
+    background-color: #ff8c00;
+    border: none;
+  }
+  
+  .btn-primary:hover {
+    background-color: #cc5200;
+  }
+  
+  .btn-secondary {
+    background-color: #343a40;
+    border: none;
+  }
+  
+  .btn-secondary:hover {
+    background-color: #23272b;
+  }
+  
+  @media (max-width: 768px) {
+    .form-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .span-2 {
+      grid-column: auto;
+    }
+  
+    .form-wrapper {
+      max-width: 100%;
+    }
+  }
